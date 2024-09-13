@@ -43,6 +43,12 @@ Please ensure you can run :
 
 React client will be available under `frontend/out` directory. You can either upload it to your prefered platform, or run `local.sh` script, that will open it locally for you !
 
+## Note on dev run
+
+If you want to run the react app in local debug mode *(ie. with `npm run dev` command)*, you will need to provide the backend URL using `NEXT_PUBLIC_API_URL` environment variable.
+
+To obtain backend URL, you first have to deploy the CDK Stack. An `ApiURL` output will appear on your console when stack is deployed.
+
 ## How to improve ?
 
 * Tests, tests and tests
