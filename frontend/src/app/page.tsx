@@ -86,9 +86,18 @@ export default function Home() {
           </div>
         ) : (
           <div className="flex flex-row justify-center items-center p-8">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" className="size-8 animate-spin" viewBox="0 0 24 24">
-              <path fillRule="evenodd" d="M12 2a.75.75 0 0 1 .75.75v1.5a.75.75 0 0 1-1.5 0V3.5A.75.75 0 0 1 12 2Z" clipRule="evenodd" />
-            </svg>
+            {loading ? (
+              <div>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" className="size-8 animate-spin" viewBox="0 0 24 24">
+                  <path fillRule="evenodd" d="M12 2a.75.75 0 0 1 .75.75v1.5a.75.75 0 0 1-1.5 0V3.5A.75.75 0 0 1 12 2Z" clipRule="evenodd" />
+                </svg>
+                Chargement en cours...
+              </div>
+            ) : (
+              <div>
+                Une erreur est survenue lors de la récupération des données météo.
+              </div>
+            )}
           </div>
         )}
       </div>
