@@ -51,8 +51,9 @@ To obtain backend URL, you first have to deploy the CDK Stack. An `ApiURL` outpu
 
 ## How to improve ?
 
-* Tests, tests and tests
-* Add a combobox / searchbox to search for other cities
+* 🧪 Tests, tests and tests 
+* 🇪🇺 i18n 
+* 🔎 Add a combobox / searchbox to search for other cities
 
 ## Thanks for reading !
 
