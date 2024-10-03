@@ -24,6 +24,12 @@ echo "Compiling typescript..."
 echo ""
 tsc
 
+# Run test suite
+echo "====================="
+echo "Running test suite..."
+echo ""
+TABLE_NAME=FakeWeatherTable npx jest lambda/index.test.js
+
 # Run cdk deploy
 echo "======================"
 echo "Deploying CDK stack..."

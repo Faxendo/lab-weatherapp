@@ -45,6 +45,8 @@ const retrieveFromDb = async (city: string) => {
     return await client.send(command);
 };
 
+export { retrieveFromDb };
+
 const storeInDb = async (city: string, data: any) => {
     const client = new DynamoDBClient();
     const command = new PutItemCommand({
@@ -60,6 +62,10 @@ const storeInDb = async (city: string, data: any) => {
     });
     return await client.send(command);
 }
+
+// Export storeindb function for testing
+export { storeInDb };
+
 
 // Lambda Handler (starting poing)
 exports.handler = async () => {
